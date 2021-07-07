@@ -4,7 +4,7 @@
 const data = [
   {
     title: 'Lambda School Students: "We\'re the best!"',
-    date: 'Nov 5th, 2018',
+    date: "Nov 5th, 2018",
     firstParagraph: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
         moff wicket tatooine luke.Solo wampa wampa calrissian yoda moff.Darth grievous darth gonk darth hutt.Darth baba skywalker
         watto fett jango maul han.Mon ewok sidious sidious lando kenobi grievous gamorrean solo.Yoda wedge utapau darth calamari.
@@ -21,11 +21,11 @@ const data = [
     thirdParagraph: `Dagobah hutt jawa leia calamari ventress skywalker yoda. Binks wicket hutt coruscant sidious
         naboo ackbar tatooine. Hutt lars padmé darth. Maul solo darth darth jabba qui-gon chewbacca darth maul. Moff baba wicket
         han. C-3po antilles moff qui-gon ahsoka aayla dooku amidala. Palpatine droid amidala droid k-3po twi'lek padmé wookiee. Leia
-        moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`
+        moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`,
   },
   {
-    title: 'Javascript and You, ES6',
-    date: 'May 7th, 2019',
+    title: "Javascript and You, ES6",
+    date: "May 7th, 2019",
     firstParagraph: `Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
         Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
         snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
@@ -41,11 +41,11 @@ const data = [
     thirdParagraph: `Toad-like smile Flourish and Blotts he knew I’d come back Quidditch World Cup. Fat Lady baubles banana fritters fairy lights 
         Petrificus Totalus. So thirsty, deluminator firs’ years follow me 12 inches of parchment. Head Boy start-of-term banquet Cleansweep Seven 
         roaring lion hat. Unicorn blood crossbow mars is bright tonight, feast Norwegian Ridgeback. Come seek us where our voices sound, we cannot 
-        sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`
+        sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`,
   },
   {
-    title: 'React vs Angular vs Vue',
-    date: 'June 7th, 2019',
+    title: "React vs Angular vs Vue",
+    date: "June 7th, 2019",
     firstParagraph: `Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
@@ -69,11 +69,11 @@ const data = [
 
     thirdParagraph: `Gotta catch 'em all Horsea gym Ninjask Absol Sinnoh Poliwag. Gotta catch 'em all Youngster wants to fight Soda Pop Floatzel 
         Leech Life Seismitoad Ariados. Earthquake Pokemon Glitch City Tail Whip Skitty Ekans Dialga. Ut aliquip ex ea commodo consequat James 
-        Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`
+        Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`,
   },
   {
-    title: 'Professional Software Development in 2019',
-    date: 'Jan 1st, 2019',
+    title: "Professional Software Development in 2019",
+    date: "Jan 1st, 2019",
     firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
           hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
           Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
@@ -85,8 +85,8 @@ const data = [
 
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
-          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
-  }
+          Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`,
+  },
 ];
 
 /*
@@ -114,3 +114,86 @@ const data = [
   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
 */
+// Create an additional data entry
+const testObject = {
+  title: "Test Object",
+  date: "Jul 7th, 2021",
+  firstParagraph: `a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
+
+  secondParagraph: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).`,
+
+  thirdParagraph: `Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.`,
+};
+data.push(testObject);
+
+// define DOM element(s)
+const articlesDiv = document.querySelector(".articles");
+
+// Component Maker Function
+const articleMaker = function (article) {
+  // create elements
+  const div = document.createElement("div");
+  const h2 = document.createElement("h2");
+  const pDate = document.createElement("p");
+  const span = document.createElement("span");
+  const p1 = document.createElement("p");
+  const p2 = document.createElement("p");
+  const p3 = document.createElement("p");
+  const readButton = document.createElement("btn");
+
+  // add classes and text content
+  div.classList.add("article");
+  h2.textContent = article.title;
+  pDate.classList.add("date");
+  pDate.textContent = article.date;
+  span.classList.add("expandButton");
+  span.textContent = "Click to Expand";
+  p1.textContent = article.firstParagraph;
+  p2.textContent = article.secondParagraph;
+  p3.textContent = article.secondParagraph;
+  readButton.textContent = "Read";
+  readButton.style.backgroundColor = "orangered";
+  readButton.style.padding = "5px";
+  readButton.style.cursor = "pointer";
+  h2.style.marginBottom = "5px";
+  pDate.style.marginTop = "10px";
+
+  // assemble the components
+  div.appendChild(h2);
+  div.appendChild(readButton);
+  div.appendChild(pDate);
+  div.appendChild(p1);
+  div.appendChild(p2);
+  div.appendChild(p3);
+  div.appendChild(span);
+
+  // add event listeners
+  const closeArticle = function () {
+    div.classList.toggle("article-open");
+    if (div.classList.contains("article-open")) {
+      span.textContent = "Click to Close";
+    } else {
+      span.textContent = "Click to Expand";
+    }
+  };
+  span.addEventListener("click", closeArticle);
+
+  readButton.addEventListener("click", function (e) {
+    const title = e.path[1].querySelector("h2").textContent;
+    data.forEach((cur, i) => {
+      if (cur.title === title) {
+        data.splice(i, 1);
+        updateUI();
+      }
+    });
+  });
+
+  return div;
+};
+
+const updateUI = function () {
+  let articles = data.map((cur) => articleMaker(cur));
+  articlesDiv.innerHTML = "";
+  articles.forEach((cur) => articlesDiv.append(cur));
+};
+updateUI();
