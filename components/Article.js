@@ -139,6 +139,7 @@ const articleMaker = function (article) {
   const p1 = document.createElement("p");
   const p2 = document.createElement("p");
   const p3 = document.createElement("p");
+  const closeButton = document.createElement("btn");
 
   // add classes and text content
   div.classList.add("article");
@@ -146,13 +147,20 @@ const articleMaker = function (article) {
   pDate.classList.add("date");
   pDate.textContent = article.date;
   span.classList.add("expandButton");
-  span.textContent = "+";
+  span.textContent = "Click to Expand";
   p1.textContent = article.firstParagraph;
   p2.textContent = article.secondParagraph;
   p3.textContent = article.secondParagraph;
+  closeButton.textContent = "Close";
+  closeButton.style.backgroundColor = "orangered";
+  closeButton.style.padding = "5px";
+  closeButton.style.cursor = "pointer";
+  h2.style.marginBottom = "5px";
+  pDate.style.marginTop = "10px";
 
   // assemble the components
   div.appendChild(h2);
+  div.appendChild(closeButton);
   div.appendChild(pDate);
   div.appendChild(p1);
   div.appendChild(p2);
@@ -160,15 +168,23 @@ const articleMaker = function (article) {
   div.appendChild(span);
 
   // add event listeners
-  span.addEventListener("click", function () {
+  const closeArticle = function () {
     div.classList.toggle("article-open");
-  });
+    if (div.classList.contains("article-open")) {
+      span.textContent = "Click to Close";
+    } else {
+      span.textContent = "Click to Expand";
+    }
+  };
+  span.addEventListener("click", closeArticle);
+
+  closeButton.addEventListener("click", closeArticle);
 
   return div;
 };
 
 // create components array by looping over data
 const articles = data.map((cur) => articleMaker(cur));
-
+console.log(articles[0]);
 // insert components by looping over the array
 articles.forEach((cur) => articlesDiv.append(cur));
