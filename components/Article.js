@@ -139,7 +139,7 @@ const articleMaker = function (article) {
   const p1 = document.createElement("p");
   const p2 = document.createElement("p");
   const p3 = document.createElement("p");
-  const closeButton = document.createElement("btn");
+  const readButton = document.createElement("btn");
 
   // add classes and text content
   div.classList.add("article");
@@ -151,16 +151,16 @@ const articleMaker = function (article) {
   p1.textContent = article.firstParagraph;
   p2.textContent = article.secondParagraph;
   p3.textContent = article.secondParagraph;
-  closeButton.textContent = "Close";
-  closeButton.style.backgroundColor = "orangered";
-  closeButton.style.padding = "5px";
-  closeButton.style.cursor = "pointer";
+  readButton.textContent = "Read";
+  readButton.style.backgroundColor = "orangered";
+  readButton.style.padding = "5px";
+  readButton.style.cursor = "pointer";
   h2.style.marginBottom = "5px";
   pDate.style.marginTop = "10px";
 
   // assemble the components
   div.appendChild(h2);
-  div.appendChild(closeButton);
+  div.appendChild(readButton);
   div.appendChild(pDate);
   div.appendChild(p1);
   div.appendChild(p2);
@@ -178,13 +178,22 @@ const articleMaker = function (article) {
   };
   span.addEventListener("click", closeArticle);
 
-  closeButton.addEventListener("click", closeArticle);
+  readButton.addEventListener("click", function (e) {
+    const title = e.path[1].querySelector("h2").textContent;
+    data.forEach((cur, i) => {
+      if (cur.title === title) {
+        data.splice(i, 1);
+        updateUI();
+      }
+    });
+  });
 
   return div;
 };
 
-// create components array by looping over data
-const articles = data.map((cur) => articleMaker(cur));
-console.log(articles[0]);
-// insert components by looping over the array
-articles.forEach((cur) => articlesDiv.append(cur));
+const updateUI = function () {
+  let articles = data.map((cur) => articleMaker(cur));
+  articlesDiv.innerHTML = "";
+  articles.forEach((cur) => articlesDiv.append(cur));
+};
+updateUI();
